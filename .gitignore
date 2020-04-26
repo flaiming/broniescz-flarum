@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+.vagrant
+config.php
+.idea
+server
+core
+studio.json
+composer.lock
+*.bak
+
+storage/
+public/assets/avatars/
+public/assets/files/
