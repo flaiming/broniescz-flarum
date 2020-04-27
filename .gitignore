@@ -4,7 +4,6 @@ Thumbs.db
 config.php
 .idea
 server
-core
 studio.json
 composer.lock
 *.bak
