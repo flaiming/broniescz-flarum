@@ -175,6 +175,7 @@ class ComposerStaticInit27413461dd334e9a366f9612ab307c99
             'FoF\\MergeDiscussions\\' => 21,
             'FoF\\Masquerade\\' => 15,
             'FoF\\Links\\' => 10,
+            'FoF\\FollowTags\\' => 15,
             'FoF\\DisposableEmails\\' => 21,
             'FoF\\Components\\' => 15,
             'FoF\\Byobu\\' => 10,
@@ -562,6 +563,10 @@ class ComposerStaticInit27413461dd334e9a366f9612ab307c99
         'FoF\\Links\\' => 
         array (
             0 => __DIR__ . '/..' . '/fof/links/src',
+        ),
+        'FoF\\FollowTags\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fof/follow-tags/src',
         ),
         'FoF\\DisposableEmails\\' => 
         array (

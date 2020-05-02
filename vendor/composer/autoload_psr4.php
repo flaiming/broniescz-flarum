@@ -92,6 +92,7 @@ return array(
     'FoF\\MergeDiscussions\\' => array($vendorDir . '/fof/merge-discussions/src'),
     'FoF\\Masquerade\\' => array($vendorDir . '/fof/masquerade/src'),
     'FoF\\Links\\' => array($vendorDir . '/fof/links/src'),
+    'FoF\\FollowTags\\' => array($vendorDir . '/fof/follow-tags/src'),
     'FoF\\DisposableEmails\\' => array($vendorDir . '/fof/disposable-emails/src'),
     'FoF\\Components\\' => array($vendorDir . '/fof/components/src'),
     'FoF\\Byobu\\' => array($vendorDir . '/fof/byobu/src'),

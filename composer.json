@@ -61,6 +61,7 @@
         "fof/ban-ips": "^0.1.5",
         "fof/byobu": "*",
         "fof/disposable-emails": "^0.1.0",
+        "fof/follow-tags": "^0.3.4",
         "fof/links": "^0.2.1",
         "fof/masquerade": "^0.3.3",
         "fof/merge-discussions": "^0.3.3",

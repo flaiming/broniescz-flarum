@@ -2156,6 +2156,61 @@
         ]
     },
     {
+        "name": "fof/follow-tags",
+        "version": "0.3.4",
+        "version_normalized": "0.3.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/FriendsOfFlarum/follow-tags.git",
+            "reference": "ce37dea3dfd884d60433bb941f4b01beb2449252"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/FriendsOfFlarum/follow-tags/zipball/ce37dea3dfd884d60433bb941f4b01beb2449252",
+            "reference": "ce37dea3dfd884d60433bb941f4b01beb2449252",
+            "shasum": ""
+        },
+        "require": {
+            "flarum/core": "^0.1.0-beta.10"
+        },
+        "time": "2019-11-02T21:39:15+00:00",
+        "type": "flarum-extension",
+        "extra": {
+            "flarum-extension": {
+                "title": "FoF Follow Tags",
+                "icon": {
+                    "name": "fas fa-user-tag",
+                    "backgroundColor": "#e74c3c",
+                    "color": "#fff"
+                }
+            },
+            "flagrow": {
+                "discuss": "https://discuss.flarum.org/d/20525-friendsofflarum-follow-tags"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "FoF\\FollowTags\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "David Sevilla Martín",
+                "email": "david.s@redevs.org",
+                "role": "Developer"
+            }
+        ],
+        "description": "Follow tags and be notified of new discussions and replies",
+        "keywords": [
+            "flarum"
+        ]
+    },
+    {
         "name": "fof/links",
         "version": "0.2.1",
         "version_normalized": "0.2.1.0",
