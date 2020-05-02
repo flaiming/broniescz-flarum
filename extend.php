@@ -10,5 +10,6 @@
 use Flarum\Extend;
 
 return [
-    // Register extenders here to customize your forum!
+	// Register extenders here to customize your forum!
+	new Extend\Locales(__DIR__ . '/locale')
 ];
