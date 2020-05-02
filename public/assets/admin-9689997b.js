@@ -144,4 +144,199 @@ module.exports=function(t){var a={};function e(r){if(a[r])return a[r].exports;va
 
 flarum.extensions['michaelbelgium-mybb-to-flarum']=module.exports;
 
-//# sourceMappingURL=http://flarum.oram.cz/assets/admin-d604da47.js.map
+var module={};
+
+module.exports=function(e){var t={};function r(n){if(t[n])return t[n].exports;var o=t[n]={i:n,l:!1,exports:{}};return e[n].call(o.exports,o,o.exports,r),o.l=!0,o.exports}return r.m=e,r.c=t,r.d=function(e,t,n){r.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:n})},r.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.t=function(e,t){if(1&t&&(e=r(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var n=Object.create(null);if(r.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var o in e)r.d(n,o,function(t){return e[t]}.bind(null,o));return n},r.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return r.d(t,"a",t),t},r.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},r.p="",r(r.s=7)}([function(e,t){e.exports=flarum.core.compat.extend},,,,,function(e,t){e.exports=flarum.core.compat["components/PermissionGrid"]},,function(e,t,r){"use strict";r.r(t);var n=r(5),o=r.n(n),a=r(0);app.initializers.add("fof-spamblock",function(){Object(a.extend)(o.a.prototype,"moderateItems",function(e){e.add("spamblockUsers",{icon:"fas fa-pastafarianism",label:app.translator.trans("fof-spamblock.admin.permissions.spamblock_users_label"),permission:"user.spamblock"})})})}]);
+;
+
+flarum.extensions['fof-spamblock']=module.exports;
+
+var module={};
+
+module.exports =
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = "./admin.js");
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./admin.js":
+/*!******************!*\
+  !*** ./admin.js ***!
+  \******************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _src_admin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/admin */ "./src/admin/index.js");
+/* empty/unused harmony star reexport */
+
+/***/ }),
+
+/***/ "./src/admin/index.js":
+/*!****************************!*\
+  !*** ./src/admin/index.js ***!
+  \****************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var flarum_extend__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! flarum/extend */ "flarum/extend");
+/* harmony import */ var flarum_extend__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(flarum_extend__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var flarum_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! flarum/app */ "flarum/app");
+/* harmony import */ var flarum_app__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(flarum_app__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var flarum_components_PermissionGrid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! flarum/components/PermissionGrid */ "flarum/components/PermissionGrid");
+/* harmony import */ var flarum_components_PermissionGrid__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(flarum_components_PermissionGrid__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.initializers.add('flagrow-split', function (app) {
+  Object(flarum_extend__WEBPACK_IMPORTED_MODULE_0__["extend"])(flarum_components_PermissionGrid__WEBPACK_IMPORTED_MODULE_2___default.a.prototype, 'moderateItems', function (items) {
+    items.add('split', {
+      icon: 'fas fa-code-branch',
+      label: app.translator.trans('fof-split.admin.permissions.split_discussion_label'),
+      permission: 'discussion.split'
+    }, 65);
+  });
+});
+
+/***/ }),
+
+/***/ "flarum/app":
+/*!********************************************!*\
+  !*** external "flarum.core.compat['app']" ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = flarum.core.compat['app'];
+
+/***/ }),
+
+/***/ "flarum/components/PermissionGrid":
+/*!******************************************************************!*\
+  !*** external "flarum.core.compat['components/PermissionGrid']" ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = flarum.core.compat['components/PermissionGrid'];
+
+/***/ }),
+
+/***/ "flarum/extend":
+/*!***********************************************!*\
+  !*** external "flarum.core.compat['extend']" ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = flarum.core.compat['extend'];
+
+/***/ })
+
+/******/ });
+
+;
+
+flarum.extensions['fof-split']=module.exports;
+
+var module={};
+
+module.exports=function(t){var n={};function a(s){if(n[s])return n[s].exports;var e=n[s]={i:s,l:!1,exports:{}};return t[s].call(e.exports,e,e.exports,a),e.l=!0,e.exports}return a.m=t,a.c=n,a.d=function(t,n,s){a.o(t,n)||Object.defineProperty(t,n,{enumerable:!0,get:s})},a.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},a.t=function(t,n){if(1&n&&(t=a(t)),8&n)return t;if(4&n&&"object"==typeof t&&t&&t.__esModule)return t;var s=Object.create(null);if(a.r(s),Object.defineProperty(s,"default",{enumerable:!0,value:t}),2&n&&"string"!=typeof t)for(var e in t)a.d(s,e,function(n){return t[n]}.bind(null,e));return s},a.n=function(t){var n=t&&t.__esModule?function(){return t.default}:function(){return t};return a.d(n,"a",n),n},a.o=function(t,n){return Object.prototype.hasOwnProperty.call(t,n)},a.p="",a(a.s=26)}([function(t,n){t.exports=flarum.core.compat.Model},function(t,n){t.exports=flarum.core.compat["components/Button"]},function(t,n,a){"use strict";function s(t,n){t.prototype=Object.create(n.prototype),t.prototype.constructor=t,t.__proto__=n}a.d(n,"a",(function(){return s}))},function(t,n){t.exports=flarum.core.compat["components/Alert"]},function(t,n){t.exports=flarum.core.compat["helpers/punctuateSeries"]},function(t,n,a){"use strict";a.d(n,"a",(function(){return c}));var s=a(2),e=a(9),i=a.n(e),r=a(1),o=a.n(r),p=a(3),d=a.n(p),l=a(4),u=a.n(l),c=function(t){function n(){return t.apply(this,arguments)||this}Object(s.a)(n,t);var a=n.prototype;return a.init=function(){if(this.address=this.props.address,this.post=this.props.post,this.user=this.props.user||this.post&&this.post.user(),!this.user&&this.address){var t=app.store.getBy("banned_ips","address",this.address);t&&(this.user=t.user())}this.banOptions=[],(this.post&&this.post.ipAddress()||this.address)&&this.banOptions.push("only"),this.user&&this.banOptions.push("all"),this.banOption=m.prop(this.banOptions[0]),this.reason=m.prop(""),this.otherUsers={},this.loading=!1},a.className=function(){return"Modal--medium"},a.title=function(){return app.translator.trans("fof-ban-ips.lib.modal.title")},a.content=function(){var t=this,n=this.otherUsers[this.banOption()],a=n&&n.map((function(t){return t&&t.displayName()||app.translator.trans("core.lib.username.deleted_text")}));return m("div",{className:"Modal-body"},m("p",null,app.translator.trans("fof-ban-ips.lib.modal.ban_ip_confirmation")),m("div",{className:"Form-group"},this.banOptions.map((function(n){return m("div",null,m("input",{type:"radio",name:"ban-option",id:"ban-option-"+n,checked:t.banOption()===n,onclick:t.banOption.bind(t,n)})," ",m("label",{htmlFor:"ban-option-"+n},app.translator.trans("fof-ban-ips.forum.modal.ban_options_"+n+"_ip",{user:t.user,ip:t.address||t.post&&t.post.ipAddress()})))}))),m("div",{className:"Form-group"},m("label",{className:"label"},app.translator.trans("fof-ban-ips.lib.modal.reason_label")),m("input",{type:"text",className:"FormControl",bidi:this.reason})),n?n.length?d.a.component({children:app.translator.transChoice("fof-ban-ips.lib.modal.ban_ip_users",a.length,{users:u()(a)}),dismissible:!1}):d.a.component({children:app.translator.trans("fof-ban-ips.forum.modal.ban_ip_no_users"),dismissible:!1,type:"success"}):"",n&&m("br",null),m("div",{className:"Form-group"},m(o.a,{className:"Button Button--primary",type:"submit",loading:this.loading},a?app.translator.trans("fof-ban-ips.lib.modal.ban_button"):app.translator.trans("fof-ban-ips.lib.modal.check_button"))))},a.onsubmit=function(t){var n=this;if(t.preventDefault(),this.loading=!0,void 0===this.otherUsers[this.banOption()])return this.getOtherUsers();var a={reason:this.reason(),userId:this.user.id()};"only"===this.banOption()?(a.address=this.post.ipAddress(),app.store.createRecord("banned_ips").save(a).then(this.hide.bind(this)).catch(this.onerror.bind(this)).then(this.loaded.bind(this))):"all"===this.banOption()&&app.request({data:{data:{attributes:a}},url:""+app.forum.attribute("apiUrl")+this.user.apiEndpoint()+"/ban",method:"POST",errorHandler:this.onerror.bind(this)}).then((function(t){return app.store.pushPayload(t).forEach(n.done.bind(n))})).then(this.hide.bind(this)).catch((function(){})).then(this.loaded.bind(this))},a.getOtherUsers=function(){var t=this,n={};"only"===this.banOption()&&(n.ip=this.address||this.post.ipAddress()),app.request({data:n,url:app.forum.attribute("apiUrl")+"/fof/ban-ips/check-users/"+this.user.id(),method:"GET",errorHandler:this.onerror.bind(this)}).then((function(n){t.otherUsers[t.banOption()]=n.data.map((function(t){return app.store.pushObject(t)})).filter((function(t){return 0===t.bannedIPs().length})),t.loading=!1})).catch((function(){})).then(this.loaded.bind(this))},a.done=function(t){var n={type:"banned_ips",id:t.id()};this.post&&(this.post.data.relationships.banned_ip={data:n}),this.user.data.relationships.banned_ips||(this.user.data.relationships.banned_ips={data:[]}),this.user.data.relationships.banned_ips.data.push(n),this.user.data.attributes.isBanned=!0,app.store.pushObject(this.user.data)},n}(i.a)},function(t,n){t.exports=flarum.core.compat.extend},function(t,n,a){"use strict";a.d(n,"a",(function(){return l}));var s=a(2),e=a(1),i=a.n(e),r=a(3),o=a.n(r),p=a(4),d=a.n(p),l=(a(8),function(t){function n(){return t.apply(this,arguments)||this}Object(s.a)(n,t);var a=n.prototype;return a.title=function(){return app.translator.trans("fof-ban-ips.lib.modal.unban_title")},a.content=function(){var t=this,n=this.otherUsers[this.banOption()],a=n&&n.map((function(t){return t&&t.displayName()||app.translator.trans("core.lib.username.deleted_text")}));return this.bannedIPs?m("div",{className:"Modal-body"},o.a.component({children:app.translator.trans("fof-ban-ips.lib.modal.unbanned_ips",{ips:d()(this.bannedIPs)}),dismissible:!1,type:"success"})):m("div",{className:"Modal-body"},m("p",null,app.translator.trans("fof-ban-ips.lib.modal.unban_ip_confirmation")),m("div",{className:"Form-group"},this.banOptions.map((function(n){return m("div",null,m("input",{type:"radio",name:"ban-option",id:"ban-option-"+n,checked:t.banOption()===n,onclick:t.banOption.bind(t,n)})," ",m("label",{htmlFor:"ban-option-"+n},app.translator.trans("fof-ban-ips.lib.modal.unban_options_"+n+"_ip",{user:t.user,ip:t.address||t.post&&t.post.ipAddress()})))}))),n?n.length?o.a.component({children:app.translator.transChoice("fof-ban-ips.lib.modal.unban_ip_users",a.length,{users:d()(a)}),dismissible:!1}):o.a.component({children:app.translator.trans("fof-ban-ips.lib.modal.unban_ip_no_users"),dismissible:!1,type:"success"}):"",n&&m("br",null),m("div",{className:"Form-group"},m(i.a,{className:"Button Button--primary",type:"submit",loading:this.loading},a?app.translator.trans("fof-ban-ips.lib.modal.unban_button"):app.translator.trans("fof-ban-ips.lib.modal.check_button"))))},a.onsubmit=function(t){if(t.preventDefault(),this.loading=!0,void 0===this.otherUsers[this.banOption()])return this.getOtherUsers();var n={};if("only"===this.banOption()){n.address=this.address||this.post.ipAddress();var a=this.post?this.post.bannedIP():app.store.getBy("banned_ips","address",this.address);a.delete().then(this.done.bind(this,a)).catch(this.onerror.bind(this)).then(this.hide.bind(this))}else"all"===this.banOption()&&app.request({data:{data:{attributes:n}},url:""+app.forum.attribute("apiUrl")+this.user.apiEndpoint()+"/unban",method:"POST",errorHandler:this.onerror.bind(this)}).then(this.done.bind(this)).catch(this.onerror.bind(this)).then(this.hide.bind(this))},a.getOtherUsers=function(){var t=this,n={};"only"===this.banOption()&&(n.ip=this.address||this.post.ipAddress(),n.skipValidation=!0);var a=app.forum.attribute("apiUrl")+"/fof/ban-ips/check-users";this.user&&(a+="/"+this.user.id()),app.request({data:n,url:a,method:"GET",errorHandler:this.onerror.bind(this)}).then((function(n){var a=app.store.pushPayload(n);t.otherUsers[t.banOption()]=a.filter((function(t){return 1===t.bannedIPs().length})),t.loading=!1,m.lazyRedraw()})).catch((function(){})).then(this.loaded.bind(this))},a.done=function(t){this.loading=!1,this.post&&delete this.post.data.relationships.banned_ip,!this.user||this.user.data.relationships||t?this.user&&t instanceof app.store.models.banned_ips&&(this.user.data.relationships.banned_ips={data:this.user.data.relationships.banned_ips.data.filter((function(n){return n.id!==t.id()}))},this.user.data.attributes.isBanned=0!==this.user.data.relationships.banned_ips.data.length):(this.user.data.relationships.banned_ips.data=[],this.user.data.attributes.isBanned=!1),t&&Array.isArray(t.data)&&(this.bannedIPs=t.data.map((function(t){return t.attributes.address})),this.loading=!1,m.lazyRedraw())},a.hide=function(){t.prototype.hide.call(this),this.props.redraw||location.reload()},n}(a(5).a))},function(t,n){t.exports=flarum.core.compat["helpers/username"]},function(t,n){t.exports=flarum.core.compat["components/Modal"]},function(t,n,a){"use strict";a.d(n,"a",(function(){return o}));var s=a(2),e=a(0),i=a.n(e),r=a(12),o=function(t){function n(){return t.apply(this,arguments)||this}return Object(s.a)(n,t),n.prototype.apiEndpoint=function(){return"/fof/ban-ips"+(this.exists?"/"+this.id():"")},n}(a.n(r)()(i.a,{creator:i.a.hasOne("creator"),user:i.a.hasOne("user"),address:i.a.attribute("address"),reason:i.a.attribute("reason"),createdAt:i.a.attribute("createdAt",i.a.transformDate),deletedAt:i.a.attribute("deletedAt",i.a.transformDate)}))},function(t,n,a){"use strict";function s(){return(s=Object.assign||function(t){for(var n=1;n<arguments.length;n++){var a=arguments[n];for(var s in a)Object.prototype.hasOwnProperty.call(a,s)&&(t[s]=a[s])}return t}).apply(this,arguments)}a.d(n,"a",(function(){return s}))},function(t,n){t.exports=flarum.core.compat["utils/mixin"]},function(t,n,a){"use strict";var s=a(5),e=a(7),i=a(10);n.a={"fof/ban-ips/components/BanIPModal":s.a,"fof/ban-ips/components/UnbanIPModal":e.a,"fof/ban-ips/models/BannedIP":i.a}},function(t,n){t.exports=flarum.core},,,,,function(t,n){t.exports=flarum.core.compat["components/PermissionGrid"]},function(t,n){t.exports=flarum.core.compat["components/AdminNav"]},function(t,n){t.exports=flarum.core.compat["components/AdminLinkButton"]},function(t,n){t.exports=flarum.core.compat["components/LoadingIndicator"]},function(t,n){t.exports=flarum.core.compat["components/Placeholder"]},function(t,n){t.exports=flarum.core.compat["components/Page"]},function(t,n){t.exports=flarum.core.compat.Component},function(t,n,a){"use strict";a.r(n);var s=a(11),e=a(0),i=a.n(e),r=a(10),o=a(6),p=a(19),d=a.n(p),l=a(20),u=a.n(l),c=a(21),h=a.n(c),f=a(2),b=a(1),g=a.n(b),v=a(22),y=a.n(v),_=a(23),O=a.n(_),N=a(24),A=a.n(N),x=a(9),P=a.n(x),B=a(3),F=a.n(B),j=a(4),I=a.n(j),w=a(8),k=a.n(w),M=function(t){function n(){return t.apply(this,arguments)||this}Object(f.a)(n,t);var a=n.prototype;return a.init=function(){this.address=m.prop(""),this.reason=m.prop(""),this.usersBanned={},this.loading=!1},a.className=function(){return"Modal--medium"},a.title=function(){return app.translator.trans("fof-ban-ips.lib.modal.title")},a.content=function(){var t=this.usersBanned[this.address()],n=t&&t.map(k.a);return m("div",{className:"Modal-body"},m("p",null,app.translator.trans("fof-ban-ips.lib.modal.ban_ip_confirmation")),m("div",{className:"Form-group"},m("label",{className:"label"},app.translator.trans("fof-ban-ips.lib.modal.address_label")),m("input",{type:"text",className:"FormControl",bidi:this.address,required:!0,pattern:"^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$|^(([a-zA-Z]|[a-zA-Z][a-zA-Z0-9\\-]*[a-zA-Z0-9])\\.)*([A-Za-z]|[A-Za-z][A-Za-z0-9\\-]*[A-Za-z0-9])$|^\\s*((([0-9A-Fa-f]{1,4}:){7}([0-9A-Fa-f]{1,4}|:))|(([0-9A-Fa-f]{1,4}:){6}(:[0-9A-Fa-f]{1,4}|((25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(\\.(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3})|:))|(([0-9A-Fa-f]{1,4}:){5}(((:[0-9A-Fa-f]{1,4}){1,2})|:((25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(\\.(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3})|:))|(([0-9A-Fa-f]{1,4}:){4}(((:[0-9A-Fa-f]{1,4}){1,3})|((:[0-9A-Fa-f]{1,4})?:((25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(\\.(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){3}(((:[0-9A-Fa-f]{1,4}){1,4})|((:[0-9A-Fa-f]{1,4}){0,2}:((25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(\\.(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){2}(((:[0-9A-Fa-f]{1,4}){1,5})|((:[0-9A-Fa-f]{1,4}){0,3}:((25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(\\.(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){1}(((:[0-9A-Fa-f]{1,4}){1,6})|((:[0-9A-Fa-f]{1,4}){0,4}:((25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(\\.(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(:(((:[0-9A-Fa-f]{1,4}){1,7})|((:[0-9A-Fa-f]{1,4}){0,5}:((25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(\\.(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:)))(%.+)?\\s*$"})),m("div",{className:"Form-group"},m("label",{className:"label"},app.translator.trans("fof-ban-ips.lib.modal.reason_label")),m("input",{type:"text",className:"FormControl",bidi:this.reason})),t?t.length?F.a.component({children:app.translator.transChoice("fof-ban-ips.lib.modal.ban_ip_users",n.length,{users:I()(n)}),dismissible:!1}):F.a.component({children:app.translator.trans("fof-ban-ips.admin.modal.ban_ip_no_users"),dismissible:!1,type:"success"}):"",t&&m("br",null),m("div",{className:"Form-group"},m(g.a,{className:"Button Button--primary",type:"submit",loading:this.loading,disabled:app.store.getBy("banned_ips","address",this.address())},n?app.translator.trans("fof-ban-ips.lib.modal.ban_button"):app.translator.trans("fof-ban-ips.lib.modal.check_button"))))},a.onsubmit=function(t){if(t.preventDefault(),this.address()){if(this.loading=!0,void 0===this.usersBanned[this.address()])return this.getOtherUsers();var n={address:this.address(),reason:this.reason()};app.store.createRecord("banned_ips").save(n).then(this.hide.bind(this),this.onerror.bind(this),this.loaded.bind(this))}},a.getOtherUsers=function(){var t=this,n={ip:this.address()};app.request({data:n,url:app.forum.attribute("apiUrl")+"/fof/ban-ips/check-users",method:"GET"}).then((function(n){t.usersBanned[t.address()]=n.data.map((function(t){return app.store.pushObject(t)})),m.lazyRedraw()})).then(this.loaded.bind(this)).catch((function(n){t.onerror(n),t.loading=!1}))},n}(P.a),U=a(25),z=a.n(U),R=a(7),S=function(t){function n(){return t.apply(this,arguments)||this}Object(f.a)(n,t);var a=n.prototype;return a.init=function(){this.item=this.props.item,this.reason=m.prop(this.item.reason())},a.className=function(){return"Modal--medium"},a.title=function(){return app.translator.trans("fof-ban-ips.admin.modal.update_title")},a.content=function(){return m("div",{className:"Modal-body"},m("div",{className:"Form-group"},m("label",{className:"label"},app.translator.trans("fof-ban-ips.lib.modal.reason_label")),m("input",{type:"text",className:"FormControl",bidi:this.reason})),m("div",{className:"Form-group"},m(g.a,{className:"Button Button--primary",type:"submit",loading:this.loading,disabled:this.reason()===this.item.reason()},app.translator.trans("fof-ban-ips.lib.modal.save_button"))))},a.onsubmit=function(t){t.preventDefault(),this.reason()&&(this.loading=!0,this.item.save({reason:this.reason()}).then(this.hide.bind(this)).catch(this.onerror.bind(this)).then(this.loaded.bind(this)))},n}(P.a),C=function(t){function n(){return t.apply(this,arguments)||this}Object(f.a)(n,t);var a=n.prototype;return a.init=function(){this.item=this.props.bannedIP},a.view=function(){var t=this;return m("tr",null,m("td",null,this.item.id()),m("td",null,k()(this.item.creator())),m("td",null,this.item.user()&&k()(this.item.user())),m("td",null,this.item.address()),m("td",null,this.item.reason()),m("td",null,this.item.createdAt().toLocaleDateString()),m("td",null,m("div",{className:"Button--group"},g.a.component({className:"Button Button--warning",icon:"fas fa-pencil-alt",disabled:this.item.creator()!==app.session.user,onclick:function(){return app.modal.show(new S({item:t.item}))}}),g.a.component({className:"Button Button--danger",icon:"fas fa-times",onclick:function(){return app.modal.show(new R.a({address:t.item.address(),redraw:!0}))}}))))},n}(z.a),Z=function(t){function n(){return t.apply(this,arguments)||this}Object(f.a)(n,t);var a=n.prototype;return a.init=function(){t.prototype.init.call(this),this.loading=!0,this.page=0,this.pageSize=20},a.config=function(n){t.prototype.config.apply(this,arguments),n||this.refresh()},a.view=function(){var t,n;return!0===this.nextResults&&(t=g.a.component({className:"Button Button--PageList-next",icon:"fas fa-angle-right",onclick:this.loadNext.bind(this)})),!0===this.prevResults&&(n=g.a.component({className:"Button Button--PageList-prev",icon:"fas fa-angle-left",onclick:this.loadPrev.bind(this)})),m("div",{className:"BannedIPsPage"},m("div",{className:"BannedIPsPage-header"},m("div",{className:"container"},m("p",null,app.translator.trans("fof-ban-ips.admin.nav.desc")),g.a.component({className:"Button Button--primary",icon:"fas fa-plus",children:app.translator.trans("fof-ban-ips.admin.page.create_button"),onclick:function(){return app.modal.show(new M)}}))),m("br",null),m("div",{className:"BannedIpsPage-table"},m("div",{className:"container"},this.loading?y.a.component():app.store.all("banned_ips").length?m("table",{style:{width:"100%",textAlign:"left"},className:"table"},m("thead",null,m("tr",null,m("th",null,"#"),m("th",null,app.translator.trans("fof-ban-ips.admin.page.creator_label")),m("th",null,app.translator.trans("fof-ban-ips.admin.page.user_label")),m("th",null,app.translator.trans("fof-ban-ips.admin.page.address_label")),m("th",null,app.translator.trans("fof-ban-ips.admin.page.reason_label")),m("th",null,app.translator.trans("fof-ban-ips.admin.page.date_label")),m("th",null))),m("tbody",null,app.store.all("banned_ips").slice(this.page,this.page+this.pageSize).map((function(t){return C.component({bannedIP:t})})))):m("div",null,O.a.component({text:app.translator.trans("fof-ban-ips.admin.empty_text")})))),m("div",null,t,n))},a.refresh=function(){return this.loadResults().then(this.parseResults.bind(this))},a.loadResults=function(){var t=this.page*this.pageSize;return app.store.find("fof/ban-ips",{page:{offset:t,limit:this.pageSize}})},a.loadNext=function(){!0===this.nextResults&&(this.page++,this.refresh())},a.loadPrev=function(){!0===this.prevResults&&(this.page--,this.refresh())},a.parseResults=function(t){this.loading=!1,this.nextResults=!!t.payload.links.next,this.prevResults=!!t.payload.links.prev,m.lazyRedraw()},n}(A.a),D=a(13),E=Object(s.a)(D.a,{"fof/ban-ips/components/BanIPModal":M,"fof/ban-ips/components/ChangeReasonModal":S,"fof/ban-ips/components/SettingsPage":Z,"fof/ban-ips/components/SettingsPageItem":C}),L=a(14);app.initializers.add("fof/ban-ips",(function(){app.store.models.banned_ips=r.a,app.store.models.users.prototype.bannedIPs=i.a.hasMany("banned_ips"),Object(o.extend)(d.a.prototype,"moderateItems",(function(t){t.add("viewBannedIPList",{icon:"fas fa-gavel",label:app.translator.trans("fof-ban-ips.admin.permissions.view_banned_ip_list_label"),permission:"fof.ban-ips.viewBannedIPList"}),t.add("banIP",{icon:"fas fa-gavel",label:app.translator.trans("fof-ban-ips.admin.permissions.ban_ip_label"),permission:"fof.ban-ips.banIP"})})),app.routes["fof-ban-ips"]={path:"/fof/ban-ips",component:Z.component()},app.extensionSettings["fof-ban-ips"]=function(){return m.route(app.route("fof-ban-ips"))},Object(o.extend)(u.a.prototype,"items",(function(t){t.add("fof-ban-ips",h.a.component({href:app.route("fof-ban-ips"),icon:"fas fa-gavel",children:app.translator.trans("fof-ban-ips.admin.nav.title"),description:app.translator.trans("fof-ban-ips.admin.nav.desc")}))}))})),Object(s.a)(L.compat,E)}]);
+;
+
+flarum.extensions['fof-ban-ips']=module.exports;
+
+var module={};
+
+module.exports=function(e){var r={};function t(n){if(r[n])return r[n].exports;var o=r[n]={i:n,l:!1,exports:{}};return e[n].call(o.exports,o,o.exports,t),o.l=!0,o.exports}return t.m=e,t.c=r,t.d=function(e,r,n){t.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:n})},t.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},t.t=function(e,r){if(1&r&&(e=t(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var n=Object.create(null);if(t.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var o in e)t.d(n,o,function(r){return e[r]}.bind(null,o));return n},t.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(r,"a",r),r},t.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},t.p="",t(t.s=16)}({0:function(e,r){e.exports=flarum.core.compat.extend},13:function(e,r){e.exports=flarum.core.compat["components/PermissionGrid"]},16:function(e,r,t){"use strict";t.r(r);var n=t(13),o=t.n(n),i=t(0);app.initializers.add("fof/merge-discussions",(function(){Object(i.extend)(o.a.prototype,"moderateItems",(function(e){e.add("mergeDiscussions",{icon:"fas fa-code-branch fa-flip-vertical",label:app.translator.trans("fof-merge-discussions.admin.permissions.merge_discussions_label"),permission:"discussion.merge"},64)}))}))}});
+;
+
+flarum.extensions['fof-merge-discussions']=module.exports;
+
+//# sourceMappingURL=http://flarum.oram.cz/assets/admin-9689997b.js.map
