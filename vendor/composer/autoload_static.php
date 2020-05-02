@@ -166,14 +166,19 @@ class ComposerStaticInit27413461dd334e9a366f9612ab307c99
             'FoF\\UserDirectory\\' => 18,
             'FoF\\UserBio\\' => 12,
             'FoF\\Upload\\' => 11,
+            'FoF\\Split\\' => 10,
+            'FoF\\Spamblock\\' => 14,
             'FoF\\Polls\\Migrations\\' => 21,
             'FoF\\Polls\\' => 10,
             'FoF\\Pages\\' => 10,
             'FoF\\NightMode\\' => 14,
+            'FoF\\MergeDiscussions\\' => 21,
             'FoF\\Masquerade\\' => 15,
             'FoF\\Links\\' => 10,
+            'FoF\\DisposableEmails\\' => 21,
             'FoF\\Components\\' => 15,
             'FoF\\Byobu\\' => 10,
+            'FoF\\BanIPs\\' => 11,
             'Flarum\\Tags\\' => 12,
             'Flarum\\Suspend\\' => 15,
             'Flarum\\Subscriptions\\' => 21,
@@ -522,6 +527,14 @@ class ComposerStaticInit27413461dd334e9a366f9612ab307c99
         array (
             0 => __DIR__ . '/..' . '/fof/upload/src',
         ),
+        'FoF\\Split\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fof/split/src',
+        ),
+        'FoF\\Spamblock\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fof/spamblock/src',
+        ),
         'FoF\\Polls\\Migrations\\' => 
         array (
             0 => __DIR__ . '/..' . '/fof/polls/migrations',
@@ -538,6 +551,10 @@ class ComposerStaticInit27413461dd334e9a366f9612ab307c99
         array (
             0 => __DIR__ . '/..' . '/fof/nightmode/src',
         ),
+        'FoF\\MergeDiscussions\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fof/merge-discussions/src',
+        ),
         'FoF\\Masquerade\\' => 
         array (
             0 => __DIR__ . '/..' . '/fof/masquerade/src',
@@ -546,6 +563,10 @@ class ComposerStaticInit27413461dd334e9a366f9612ab307c99
         array (
             0 => __DIR__ . '/..' . '/fof/links/src',
         ),
+        'FoF\\DisposableEmails\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fof/disposable-emails/src',
+        ),
         'FoF\\Components\\' => 
         array (
             0 => __DIR__ . '/..' . '/fof/components/src',
@@ -553,6 +574,10 @@ class ComposerStaticInit27413461dd334e9a366f9612ab307c99
         'FoF\\Byobu\\' => 
         array (
             0 => __DIR__ . '/..' . '/fof/byobu/src',
+        ),
+        'FoF\\BanIPs\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fof/ban-ips/src',
         ),
         'Flarum\\Tags\\' => 
         array (
@@ -682,6 +707,7 @@ class ComposerStaticInit27413461dd334e9a366f9612ab307c99
 
     public static $classMap = array (
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'MailChecker' => __DIR__ . '/..' . '/fgribreau/mailchecker/platform/php/MailChecker.php',
         'Pusher' => __DIR__ . '/..' . '/pusher/pusher-php-server/lib/Pusher.php',
         'PusherException' => __DIR__ . '/..' . '/pusher/pusher-php-server/lib/Pusher.php',
         'PusherInstance' => __DIR__ . '/..' . '/pusher/pusher-php-server/lib/Pusher.php',

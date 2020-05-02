@@ -774,6 +774,43 @@
         ]
     },
     {
+        "name": "fgribreau/mailchecker",
+        "version": "v3.3.4",
+        "version_normalized": "3.3.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/FGRibreau/mailchecker.git",
+            "reference": "f1ac3a84b643817e3846c21bb110fdb2c6d838dc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/FGRibreau/mailchecker/zipball/f1ac3a84b643817e3846c21bb110fdb2c6d838dc",
+            "reference": "f1ac3a84b643817e3846c21bb110fdb2c6d838dc",
+            "shasum": ""
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^7.0"
+        },
+        "time": "2020-01-22T13:48:02+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "platform/php/MailChecker.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Temporary (disposable/throwaway) email detection library. Covers 1987 fake email providers.",
+        "keywords": [
+            "detection",
+            "email",
+            "fake"
+        ]
+    },
+    {
         "name": "fig/http-message-util",
         "version": "1.1.4",
         "version_normalized": "1.1.4.0",
@@ -1895,6 +1932,61 @@
         ]
     },
     {
+        "name": "fof/ban-ips",
+        "version": "0.1.5",
+        "version_normalized": "0.1.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/FriendsOfFlarum/ban-ips.git",
+            "reference": "d1d43ac3c348eef4995b7242c6ec866ef487acbe"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/FriendsOfFlarum/ban-ips/zipball/d1d43ac3c348eef4995b7242c6ec866ef487acbe",
+            "reference": "d1d43ac3c348eef4995b7242c6ec866ef487acbe",
+            "shasum": ""
+        },
+        "require": {
+            "flarum/core": "^0.1.0-beta.10"
+        },
+        "time": "2019-10-16T23:25:54+00:00",
+        "type": "flarum-extension",
+        "extra": {
+            "flarum-extension": {
+                "title": "FoF Ban IPs",
+                "icon": {
+                    "name": "fas fa-gavel",
+                    "backgroundColor": "#e74c3c",
+                    "color": "#fff"
+                }
+            },
+            "flagrow": {
+                "discuss": "https://discuss.flarum.org/d/20949-friendsofflarum-ban-ips"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "FoF\\BanIPs\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "David Sevilla Martín",
+                "email": "david.s@redevs.org",
+                "role": "Developer"
+            }
+        ],
+        "description": "Ban IP addresses from your forum",
+        "keywords": [
+            "flarum"
+        ]
+    },
+    {
         "name": "fof/byobu",
         "version": "0.5.0",
         "version_normalized": "0.5.0.0",
@@ -2005,6 +2097,62 @@
         "keywords": [
             "flarum",
             "friendsofflarum"
+        ]
+    },
+    {
+        "name": "fof/disposable-emails",
+        "version": "0.1.0",
+        "version_normalized": "0.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/FriendsOfFlarum/disposable-emails.git",
+            "reference": "013dbe01799e401e78475027483904d9a7152090"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/FriendsOfFlarum/disposable-emails/zipball/013dbe01799e401e78475027483904d9a7152090",
+            "reference": "013dbe01799e401e78475027483904d9a7152090",
+            "shasum": ""
+        },
+        "require": {
+            "fgribreau/mailchecker": "^3.2.33",
+            "flarum/core": "^0.1.0-beta.8"
+        },
+        "time": "2019-06-22T12:57:32+00:00",
+        "type": "flarum-extension",
+        "extra": {
+            "flarum-extension": {
+                "title": "FoF Disposable Emails",
+                "icon": {
+                    "name": "fas fa-user-times",
+                    "backgroundColor": "#e74c3c",
+                    "color": "#fff"
+                }
+            },
+            "flagrow": {
+                "discuss": "https://discuss.flarum.org/d/20457-friendsofflarum-disposable-emails"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "FoF\\DisposableEmails\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "David Sevilla Martín",
+                "email": "david.s@redevs.org",
+                "role": "Developer"
+            }
+        ],
+        "description": "Prevent users from signing up with disposable emails",
+        "keywords": [
+            "flarum"
         ]
     },
     {
@@ -2136,6 +2284,61 @@
             "member profile",
             "profile",
             "user profile"
+        ]
+    },
+    {
+        "name": "fof/merge-discussions",
+        "version": "0.3.3",
+        "version_normalized": "0.3.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/FriendsOfFlarum/merge-discussions.git",
+            "reference": "d89269b79f51f2e6f22e27d7d2a68285f5f7ac80"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/FriendsOfFlarum/merge-discussions/zipball/d89269b79f51f2e6f22e27d7d2a68285f5f7ac80",
+            "reference": "d89269b79f51f2e6f22e27d7d2a68285f5f7ac80",
+            "shasum": ""
+        },
+        "require": {
+            "flarum/core": "^0.1.0-beta.8"
+        },
+        "time": "2019-09-25T22:10:20+00:00",
+        "type": "flarum-extension",
+        "extra": {
+            "flarum-extension": {
+                "title": "FoF Merge Discussions",
+                "icon": {
+                    "name": "fas fa-code-branch fa-flip-vertical",
+                    "backgroundColor": "#e74c3c",
+                    "color": "#fff"
+                }
+            },
+            "flagrow": {
+                "discuss": "https://discuss.flarum.org/d/19460-friendsofflarum-merge-discussions"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "FoF\\MergeDiscussions\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "David Sevilla Martín",
+                "email": "david.s@redevs.org",
+                "role": "Developer"
+            }
+        ],
+        "description": "Merge two or more discussions into one",
+        "keywords": [
+            "flarum"
         ]
     },
     {
@@ -2336,6 +2539,128 @@
                 "url": "https://opencollective.com/fof",
                 "type": "open_collective"
             }
+        ]
+    },
+    {
+        "name": "fof/spamblock",
+        "version": "0.2.1",
+        "version_normalized": "0.2.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/FriendsOfFlarum/spamblock.git",
+            "reference": "febc3c5d34ad6122d8030bc0217124033f4f9b17"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/FriendsOfFlarum/spamblock/zipball/febc3c5d34ad6122d8030bc0217124033f4f9b17",
+            "reference": "febc3c5d34ad6122d8030bc0217124033f4f9b17",
+            "shasum": ""
+        },
+        "require": {
+            "flarum/core": "^0.1.0-beta-8"
+        },
+        "time": "2018-12-04T00:19:46+00:00",
+        "type": "flarum-extension",
+        "extra": {
+            "flarum-extension": {
+                "title": "FoF Spamblock",
+                "icon": {
+                    "name": "fas fa-pastafarianism",
+                    "backgroundColor": "#e74c3c",
+                    "color": "#fff"
+                }
+            },
+            "flagrow": {
+                "discuss": "https://discuss.flarum.org/d/17772-friendsofflarum-spamblock"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "FoF\\Spamblock\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "David Sevilla Martín",
+                "email": "david.s@redevs.org",
+                "role": "Developer"
+            }
+        ],
+        "description": "Mark user as spammer, suspending them & hiding their posts and discussions",
+        "keywords": [
+            "flarum"
+        ]
+    },
+    {
+        "name": "fof/split",
+        "version": "0.4.3",
+        "version_normalized": "0.4.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/FriendsOfFlarum/split.git",
+            "reference": "53b163f0e5043bb014a35a99dd834042148babe4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/FriendsOfFlarum/split/zipball/53b163f0e5043bb014a35a99dd834042148babe4",
+            "reference": "53b163f0e5043bb014a35a99dd834042148babe4",
+            "shasum": ""
+        },
+        "require": {
+            "flarum/core": "^0.1.0-beta.8"
+        },
+        "time": "2019-07-09T17:59:06+00:00",
+        "type": "flarum-extension",
+        "extra": {
+            "flarum-extension": {
+                "title": "FoF Split",
+                "icon": {
+                    "name": "fas fa-code-branch",
+                    "backgroundColor": "#e74c3c",
+                    "color": "#fff"
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/1903"
+                }
+            },
+            "branch-alias": {
+                "dev-master": "0.1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "FoF\\Split\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Matteo Pompili",
+                "email": "matpompili@gmail.com"
+            },
+            {
+                "name": "Connor Davis",
+                "email": "davis@produes.co"
+            },
+            {
+                "name": "Daniël Klabbers",
+                "email": "daniel@klabbers.email",
+                "homepage": "http://luceos.com"
+            }
+        ],
+        "description": "Separate posts from one discussion into its own, splits discussions.",
+        "keywords": [
+            "flarum",
+            "split"
         ]
     },
     {
