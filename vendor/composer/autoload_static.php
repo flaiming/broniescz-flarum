@@ -98,6 +98,7 @@ class ComposerStaticInit27413461dd334e9a366f9612ab307c99
         ),
         'R' => 
         array (
+            'ReCaptcha\\' => 10,
             'Ramsey\\Uuid\\' => 12,
         ),
         'P' => 
@@ -166,8 +167,10 @@ class ComposerStaticInit27413461dd334e9a366f9612ab307c99
             'FoF\\UserDirectory\\' => 18,
             'FoF\\UserBio\\' => 12,
             'FoF\\Upload\\' => 11,
+            'FoF\\Terms\\' => 10,
             'FoF\\Split\\' => 10,
             'FoF\\Spamblock\\' => 14,
+            'FoF\\ReCaptcha\\' => 14,
             'FoF\\Polls\\Migrations\\' => 21,
             'FoF\\Polls\\' => 10,
             'FoF\\Pages\\' => 10,
@@ -177,6 +180,7 @@ class ComposerStaticInit27413461dd334e9a366f9612ab307c99
             'FoF\\Links\\' => 10,
             'FoF\\FollowTags\\' => 15,
             'FoF\\DisposableEmails\\' => 21,
+            'FoF\\DefaultGroup\\' => 17,
             'FoF\\Components\\' => 15,
             'FoF\\Byobu\\' => 10,
             'FoF\\BanIPs\\' => 11,
@@ -210,6 +214,10 @@ class ComposerStaticInit27413461dd334e9a366f9612ab307c99
             'Doctrine\\Common\\Cache\\' => 22,
             'Doctrine\\Common\\' => 16,
             'Dflydev\\FigCookies\\' => 19,
+        ),
+        'A' => 
+        array (
+            'AntoineFr\\Online\\' => 17,
         ),
     );
 
@@ -333,6 +341,10 @@ class ComposerStaticInit27413461dd334e9a366f9612ab307c99
         'SoftCreatR\\MimeDetector\\' => 
         array (
             0 => __DIR__ . '/..' . '/softcreatr/php-mime-detector/src/SoftCreatR/MimeDetector',
+        ),
+        'ReCaptcha\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/google/recaptcha/src/ReCaptcha',
         ),
         'Ramsey\\Uuid\\' => 
         array (
@@ -528,6 +540,10 @@ class ComposerStaticInit27413461dd334e9a366f9612ab307c99
         array (
             0 => __DIR__ . '/..' . '/fof/upload/src',
         ),
+        'FoF\\Terms\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fof/terms/src',
+        ),
         'FoF\\Split\\' => 
         array (
             0 => __DIR__ . '/..' . '/fof/split/src',
@@ -535,6 +551,10 @@ class ComposerStaticInit27413461dd334e9a366f9612ab307c99
         'FoF\\Spamblock\\' => 
         array (
             0 => __DIR__ . '/..' . '/fof/spamblock/src',
+        ),
+        'FoF\\ReCaptcha\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fof/recaptcha/src',
         ),
         'FoF\\Polls\\Migrations\\' => 
         array (
@@ -571,6 +591,10 @@ class ComposerStaticInit27413461dd334e9a366f9612ab307c99
         'FoF\\DisposableEmails\\' => 
         array (
             0 => __DIR__ . '/..' . '/fof/disposable-emails/src',
+        ),
+        'FoF\\DefaultGroup\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fof/default-group/src',
         ),
         'FoF\\Components\\' => 
         array (
@@ -679,6 +703,10 @@ class ComposerStaticInit27413461dd334e9a366f9612ab307c99
         'Dflydev\\FigCookies\\' => 
         array (
             0 => __DIR__ . '/..' . '/dflydev/fig-cookies/src/Dflydev/FigCookies',
+        ),
+        'AntoineFr\\Online\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/antoinefr/flarum-ext-online/src',
         ),
     );
 
